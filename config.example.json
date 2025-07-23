@@ -1,0 +1,77 @@
+{
+  "kintone": {
+    "domain": "your-subdomain.cybozu.com",
+    "app_id": "123",
+    "api_token": "your-api-token-here",
+    "api_permissions": [
+      "record_read",
+      "record_create", 
+      "record_update",
+      "record_delete"
+    ],
+    "app_code": "task_manager",
+    "app_description": "タスク管理アプリ - プロジェクトのタスクを管理し、進捗を追跡するためのアプリケーションです。優先度、期限、担当者の管理が可能です。"
+  },
+  "fields": [
+    {
+      "field_name": "タイトル",
+      "field_type": "SINGLE_LINE_TEXT",
+      "field_code": "title",
+      "description": "タスクのタイトル"
+    },
+    {
+      "field_name": "説明",
+      "field_type": "MULTI_LINE_TEXT",
+      "field_code": "description", 
+      "description": "タスクの詳細な説明"
+    },
+    {
+      "field_name": "優先度",
+      "field_type": "DROP_DOWN",
+      "field_code": "priority",
+      "description": "タスクの優先度（高/中/低）"
+    },
+    {
+      "field_name": "ステータス",
+      "field_type": "DROP_DOWN", 
+      "field_code": "status",
+      "description": "タスクの進行状況"
+    },
+    {
+      "field_name": "期限日",
+      "field_type": "DATE",
+      "field_code": "due_date",
+      "description": "タスクの完了予定日"
+    },
+    {
+      "field_name": "担当者",
+      "field_type": "USER_SELECT",
+      "field_code": "assignee",
+      "description": "タスクの担当者"
+    },
+    {
+      "field_name": "カテゴリ",
+      "field_type": "CHECK_BOX",
+      "field_code": "category",
+      "description": "タスクのカテゴリ（複数選択可）"
+    },
+    {
+      "field_name": "完了日時",
+      "field_type": "DATETIME",
+      "field_code": "completed_at",
+      "description": "タスク完了日時"
+    },
+    {
+      "field_name": "コスト",
+      "field_type": "NUMBER",
+      "field_code": "cost",
+      "description": "タスクに関連するコスト"
+    },
+    {
+      "field_name": "参考URL",
+      "field_type": "LINK",
+      "field_code": "reference_url",
+      "description": "参考となるWebページのURL"
+    }
+  ]
+}
